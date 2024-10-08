@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforteca</title>
+    <h1>QUIZ</h1>
+</head>
+<body>
+    <p>2º pergunta: Tomou banho hoje ?</p>
+<form action="">
+    <input type="radio" id="alternativa1" name="alternativas" value="alternativa1">
+    <label>Sim</label><br>
+    <input type="radio" id="alternativa3" name="alternativas" value="alternativa2">
+    <label>Não</label><br><br>
+    <input type="button" onclick="ChecarResposta()" value="Checar Resposta">
+  
+</form>
+
+<script>
+function ChecarResposta(){
+    const alternativaCorreta = "alternativa1"
+    const opcaoEscolhida = document.querySelector('input[name="alternativas"]:checked')
+    if(opcaoEscolhida.value === alternativaCorreta){
+    alert("Aí sim")
+    } else{
+        alert("Vai tomar banho imundo")
+    }
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reforteca</title>
+    <h1>QUIZ</h1>
+</head>
+<body>
+    <p>1º pergunta: Qual a data da 1º avaliação ?</p>
+<form action="">
+    <input type="radio" id="alternativa1" name="alternativas" value="alternativa1">
+    <label>07/10</label><br>
+    <input type="radio" id="alternativa2" name="alternativas" value="alternativa2">
+    <label>14/10</label><br>
+    <input type="radio" id="alternativa3" name="alternativas" value="alternativa3">
+    <label>21/10</label><br><br>
+    <input type="button" onclick="ChecarResposta()" value="Checar Resposta">
+  
+</form>
+
+<script>
+function ChecarResposta(){
+    const alternativaCorreta = "alternativa2"
+    const opcaoEscolhida = document.querySelector('input[name="alternativas"]:checked')
+    if(opcaoEscolhida.value === alternativaCorreta){
+    alert("Resposta Correta")
+    window.location.href= 'questao2.html'
+    } else{
+        alert("Escolha a Alternativa Correta")
+    }
+
+}
+
+</script>
+
+</body>
+</html>
